@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ContextExample from "./components/ContextExample";
+import ControlledVSUncontrolled from "./components/ControlledVSUncontrolled";
+import ErrorBoundary from "./components/ErrorBoundary";
+import HighOrderComponentExample from "./components/HighOrderComponentExample";
+import LifeCycle from "./components/LifeCycle";
+import PortalExample from "./components/PortalExample";
+import ReducerExample from "./components/ReducerExample";
+import StateExample from "./components/StateExample";
+import UseEffectExamlple from "./components/UseEffectExamlple";
+import { UserContextProvider } from "./context/userContext";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContextProvider>
+      <ContextExample />
+    </UserContextProvider>
   );
 }
-
-export default App;
