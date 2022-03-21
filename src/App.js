@@ -7,13 +7,15 @@ import LifeCycle from "./components/LifeCycle";
 import PortalExample from "./components/PortalExample";
 import ReducerExample from "./components/ReducerExample";
 import StateExample from "./components/StateExample";
+import UseCallbackVSUseMemo from "./components/UseCallbackVSUseMemo";
 import UseEffectExamlple from "./components/UseEffectExamlple";
+import UseRefExample from "./components/UseRefExample";
 import { UserContextProvider } from "./context/userContext";
 
 export default function App() {
   return (
     <UserContextProvider>
-      <ContextExample />
+      <UseRefExample />
     </UserContextProvider>
   );
 }
